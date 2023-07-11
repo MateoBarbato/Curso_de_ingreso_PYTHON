@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre:mateo
+apellido:barbato
 ---
 Ejercicio: entrada_salida_06
 ---
@@ -41,6 +41,17 @@ class App(customtkinter.CTk):
 
 
     def btn_sumar_on_click(self):
+        valora = self.txt_operador_a.get()
+        valorb = self.txt_operador_b.get()
+        
+        valoraEnteroA = int(valora)
+        valoraEnteroB = int(valorb)
+
+        resultadoSuma = valoraEnteroA+valoraEnteroB
+        alert(title='Calculator4002',message=f"El resultado de la sumas es: {resultadoSuma}")
+        # alert(title='Calculator4002',message=f"El resultado de la sumas es: {0}" .format(resultado))
+        # otra manera de hacer el deliver del resultado, format maneja indices, se puede agregar otro valor tras resultado y tendira index 1, etc..
+
         pass
      
         

@@ -47,6 +47,7 @@ class App(customtkinter.CTk):
         self.btn_total_iva = customtkinter.CTkButton(master=self, text="TOTAL c/IVA", command=self.btn_total_iva_on_click)
         self.btn_total_iva.grid(row=5, pady=10, columnspan=2, sticky="nsew")
 
+
     def btn_total_on_click(self):
         total = int(self.txt_importe_1.get()) + int(self.txt_importe_2.get()) + int(self.txt_importe_3.get())
         alert(title="Alert", message="El resultado total sin iva es: " + str(total))

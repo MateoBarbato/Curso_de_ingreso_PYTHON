@@ -6,6 +6,9 @@ import customtkinter
 
 '''
 Enunciado:
+SACAR EL PERIMETRO.
+UN HILO ES UNA VUELTA COMPLETA AL PERIMETRO.
+
 
 2.	El departamento de Construcción Rural requiere una herramienta que facilite el calculo de materiales necesarios 
 a la hora de realizar un alambrado permetral, se le solicita al usuario que ingrese el ancho y el largo del terreno.

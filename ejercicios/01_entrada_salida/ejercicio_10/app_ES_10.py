@@ -40,7 +40,12 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        numero = prompt("titulo","Ingrese algo")
+        numero = int(self.txt_importe.get())
+        porcentaje = int(self.txt_descuento.get())
+        porcentajeDeNumero = porcentaje * numero / 100
+        total = numero - porcentajeDeNumero
+        alert("lalal",message=total)
+        
         
     
 if __name__ == "__main__":
